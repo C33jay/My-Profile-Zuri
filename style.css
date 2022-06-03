@@ -1,0 +1,265 @@
+:root{
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow:  0 3px 5px rgb(0 0 0 / 10%);
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #2c405e
+}
+.logo{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #2c405e;
+    font-size: 20px;
+}
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all .4s ease-in-out;
+}
+/* Main-Container- Home Page */
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.row{
+    display: flex;   
+}
+.col-details  {
+    text-align: justify;
+    text-justify: inter-word;
+}
+.col-details p a{
+    text-decoration: none;
+}
+.col-2 img{
+    margin: 50px;
+    border: 4px solid rgba(0, 0, 0, 0.945) ;
+    height: 300px;
+}
+.col-2 h1, .col-2 h2{
+    color: #2c405e;
+    margin: 2rem;
+}
+.col-2 h2 span{
+    color: #125ac5;
+    text-transform: uppercase;
+}
+.col-2 p{
+    font-size: 20px;
+    margin-bottom: 60px;
+    line-height:25px;
+    margin: 2rem;
+}
+/* Big Button */
+.main_div {
+    --color: #3992e6;
+    position: relative;
+    z-index: 1;
+    width: 12rem;
+    margin-left: 2rem ;
+
+}
+   
+   .main_div::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    top: -7px;
+    left: -7px;
+    z-index: -5;
+    border-top: 3px solid var(--color);
+    border-left: 3px solid var(--color);
+    transition: 0.5s;
+   }
+   
+   .main_div::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    bottom: -7px;
+    right: -7px;
+    z-index: -5;
+    border-right: 3px solid var(--color);
+    border-bottom: 3px solid var(--color);
+    transition: 0.5s;
+   }
+   
+   .main_div:hover::before {
+    width: 100%;
+    height: 100%;
+   }
+   
+   .main_div:hover::after {
+    width: 100%;
+    height: 100%;
+   }
+   
+   .main_div button {
+    padding: 0.7em 2em;
+    font-size: 16px;
+    background:  #2c405e ;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+   }
+   .main_div a{
+       text-decoration: none;
+       color: white;
+       font-size: 18px;
+   }
+   .row-3{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-gap: 4px;
+       margin-bottom: 55px;
+   }
+   .col-3{
+    border-radius: 0px;
+    background: #fff;
+    box-shadow:  7px 7px 14px #676767,
+             -7px -7px 14px #ffffff;   
+    margin: .5rem;
+    padding: 6px;
+    }
+    .col-3 h2{
+    text-transform: uppercase;
+
+   }
+   .col-3 ol li, .col-3 ul li{
+       list-style-type: none;
+       color: rgba(27, 31, 41, 0.667)c5;
+       
+   }
+
+/* Contact Page */
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    margin: 8.4rem 10rem;
+    width: 50rem;
+    box-shadow: inherit;
+}
+.contact-form input, .contact-form button {
+    width: 60%;
+    height: 1.8rem;
+    margin: .5rem;
+}
+.contact-form textarea{
+    width: 60%;
+}
+.contact-form button{
+    margin-left: 10rem;
+    border-radius: 2rem;
+    color: white;
+    background-color: #2c405e;
+    border: none;
+}
+.contact-form button:hover{
+    background-color: #125ac5;
+}
+/* Registration */
+.register-form{
+    display: flex;
+    flex-direction: column;
+    margin: 3.5rem 10rem;
+}
+
+.register-form input{
+    width: 60%;
+    margin: .4rem;
+    padding: .5rem
+}
+.register-form select{
+    width: 60%;
+    margin-left: 11rem;
+    padding: .5rem;
+}
+.register-form button {
+    margin-left: 11rem;
+    border-radius: 2rem;
+    color: white;
+    background-color: #2c405e;
+    width: 60%;
+    padding: .5rem;
+    border: none;
+}
+.register-form button:hover{
+    background-color: #125ac5;
+}
+/* Log In */
+.form-login{
+    display: flex;
+    flex-direction: column;
+    margin: 13.6rem 10rem;
+}
+.form-login input{
+    width: 60%;
+    margin: .4rem;
+    padding: .5rem
+}
+.form-login button {
+    margin-left: 11rem;
+    border-radius: 2rem;
+    color: white;
+    background-color: #2c405e;
+    width: 60%;
+    padding: .5rem;
+    border: none;
+}
+.form-login button:hover{
+    background-color: #125ac5;
+}
+
+
+/* footer */
+
+.footer{
+    width: 100%;
+    box-shadow:  0 3px 5px rgb(0 0 0 / 10%);
+    height: 45px;
+    margin: 15px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: .5rem; 
+    background-color: #2c405e;;   
+}
+.footer h3 {
+    color: white;
+    
+}
+.fa-heart{
+    color: red;
+}
+
